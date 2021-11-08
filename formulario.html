@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Formulario</title>
+	<script type="text/javascript" src="validacoes.js"></script>
 </head>
 <body>
 	<h1>Formulario</h1>
@@ -9,24 +10,33 @@
 	<link rel="stylesheet" type="text/css" href="_css/estilo.css">
 	<form>
 		<p>Nome:</p>
-		<input type="text" name="nome">
+		<input type="text" name="nome" id="nome">
 		<br>
 		<p>Email:</p>
-		<input type="email" name="email"placeholder="funalo.detal@gmail.com">
+		<input type="email" name="email"placeholder="funalo.detal@gmail.com" id="email">
 		<br>
 		<p>Celular:</p>
-		<input type="text" name="celular" placeholder="(12) 12345-1234">
+		<input type="text" name="celular" placeholder="(12) 12345-1234" id="celular">
 		<br>
 		<p>CPF:</p>
-		<input type="text" name="cpf" placeholder="XXX.XXX.XXX-XX">
+		<input type="text" name="cpf" placeholder="XXX.XXX.XXX-XX" id="cpf">
 		<br>
 		<p>Assunto:</p>
-		<input type="text" name="assunto">
+		<input type="text" name="assunto" id="assunto">
 		<br>
 		<p>Detalhes:</p>
-		<input type="text" name="detalhes">
+		<input type="text" name="detalhes" id="detalhes">
 		<br>
-		<button>Enviar</button>
+		<p>Tipo de Pessoa (Fisica ou Juridica):</p>
+		<input type="text" name="TipoDePessoa" id="tipodepessoa">
+		<br>
+		<p>Senha::</p>
+		<input type="text" name="Senha" id="senha">
+		<br>
+		<p>Confirmar Senha:</p>
+		<input type="text" name="ConfirmarSenha" id="confirmarsenha">
+		<br>
+		<button onclick="verificar()">Enviar</button>
 	</form>
 
 </body>
