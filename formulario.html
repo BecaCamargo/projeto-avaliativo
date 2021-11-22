@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title>Formulario</title>
 	<script type="text/javascript" src="validacoes.js"></script>
 </head>
@@ -8,12 +9,12 @@
 	<h1>Formulario</h1>
 	<a href="index.html">index.html</a>
 	<link rel="stylesheet" type="text/css" href="_css/estilo.css">
-	<form>
+	<form method="post">
 		<p>Nome:</p>
 		<input type="text" name="nome" id="nome">
 		<br>
 		<p>Email:</p>
-		<input type="email" name="email"placeholder="funalo.detal@gmail.com" id="email">
+		<input type="email" name="email" placeholder="funalo.detal@gmail.com" id="email">
 		<br>
 		<p>Celular:</p>
 		<input type="text" name="celular" placeholder="(12) 12345-1234" id="celular">
@@ -27,15 +28,28 @@
 		<p>Detalhes:</p>
 		<input type="text" name="detalhes" id="detalhes">
 		<br>
-		<p>Tipo de Pessoa (Fisica ou Juridica):</p>
-		<input type="text" name="TipoDePessoa" id="tipodepessoa">
-		<br>
-		<p>Senha::</p>
+		<p>Senha:</p>
 		<input type="text" name="Senha" id="senha">
 		<br>
 		<p>Confirmar Senha:</p>
 		<input type="text" name="ConfirmarSenha" id="confirmarsenha">
 		<br>
+		<p>Endereço:</p>
+		<input type="text" name="Endereco" id="endereco">
+		<br>
+		<p>Bairro:</p>
+		<input type="text" name="Bairro" id="bairro">
+		<br>
+		<p>Cidade:</p>
+		<input type="text" name="Cidade" id="cidade">
+		<br>
+		<p>Estado:</p>
+		<input type="text" name="Estado" id="estado">
+		<br>
+		<p>Ponto de Referência:</p>
+		<input type="text" name="PontoDeReferencia" id="pontodereferencia">
+		<br>
+		<p>
 		<button onclick="verificar()">Enviar</button>
 	</form>
 
